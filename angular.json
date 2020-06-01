@@ -30,7 +30,14 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              {
+                "input": "src/assets/js/onehr.js",
+                "lazy": true,
+                "bundleName": "onehr"
+              }
+            ]
           },
           "configurations": {
             "production": {

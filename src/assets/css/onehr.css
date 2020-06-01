@@ -1,0 +1,3951 @@
+body {
+    font-family: Poppins, sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Lora, sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Lora, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Lora, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  .banner {
+    height: 650px;
+    background-color: #212127;
+    background-image: url('https://onehr.un.org/images/slide-bg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .banner.with-slider {
+    display: none;
+    height: 700px;
+    background-image: url('https://onehr.un.org/images/cover1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .banner.style-3 {
+    height: 600px;
+    background-image: url('https://onehr.un.org/images/bg-9.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .navbar {
+    padding: 20px 10px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .3);
+    background-color: transparent;
+  }
+  
+  .navbar.style-2 {
+    border-bottom-color: #e1e1e1;
+    background-color: #fff;
+  }
+  
+  .nav-link {
+    margin-left: 5px;
+    padding: 12px 25px 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .nav-link:hover {
+    border-color: hsla(0, 0%, 100%, .38);
+  }
+  
+  .nav-link.no-drop {
+    padding-right: 10px;
+  }
+  
+  .nav-link.no-drop.w--current {
+    border-color: hsla(0, 0%, 100%, .38);
+    color: #fff;
+  }
+  
+  .nav-link.no-drop.dark:hover {
+    border-color: #0265b5;
+  }
+  
+  .nav-link.no-drop.dark.w--current {
+    border-color: #0265b5;
+    color: #0265b5;
+  }
+  
+  .nav-link.dark {
+    color: #313131;
+    font-weight: 500;
+  }
+  
+  .nav-link.dark:hover {
+    border-color: #0265b5;
+  }
+  
+  .arrow-drop {
+    margin-top: 14px;
+    margin-right: 8px;
+    font-size: 12px;
+  }
+  
+  .section {
+    position: relative;
+    display: block;
+    padding: 80px 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .section.gray {
+    padding-bottom: 80px;
+    background-color: #f1f1f7;
+  }
+  
+  .section.no-bottom-margin {
+    padding-bottom: 0px;
+  }
+  
+  .section.with-line {
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+  }
+  
+  .section.with-line.more {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-style: none;
+  }
+  
+  .section.with-color {
+    background-color: #0ac876;
+  }
+  
+  .section.with-color.with-map {
+    height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #0265b5;
+    background-image: url('https://onehr.un.org/images/map-2.png');
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .section.with-color.less-space {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .section.with-image {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 97%, .79), hsla(0, 0%, 97%, .79)), url('https://onehr.un.org/images/bench-accounting-49027.jpg');
+    background-image: linear-gradient(180deg, hsla(0, 0%, 97%, .79), hsla(0, 0%, 97%, .79)), url('https://onehr.un.org/images/bench-accounting-49027.jpg');
+    background-position: 0px 0px, 52% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, fixed;
+  }
+  
+  .section.faq {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .container-fluid {
+    display: block;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .container-fluid.center {
+    position: relative;
+    top: 35%;
+    -webkit-transform: translate(0px, -50%);
+    -ms-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
+  }
+  
+  .container-fluid.center.more {
+    top: 50%;
+    text-align: left;
+  }
+  
+  .heading-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-family: Lora, sans-serif;
+    font-size: 32px;
+  }
+  
+  .heading-1.smaller {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .heading-1.smaller.contact-page {
+    color: #000;
+    text-align: center;
+  }
+  
+  .heading-1.small {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    color: #fff;
+    font-size: 28px;
+  }
+  
+  .heading-1.with-color {
+    color: #0ac876;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .heading-1.pricing-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  
+  .heading-1.white {
+    color: #fff;
+  }
+  
+  .heading-1.white.biger {
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+  
+  .color {
+    display: none;
+    color: #0265b5;
+    font-size: 34px;
+    font-weight: 400;
+  }
+  
+  .color.smaller {
+    color: #fff;
+    font-size: 22px;
+  }
+  
+  .color.smaller.contact-page {
+    color: #0265b5;
+  }
+  
+  .color.white {
+    color: #fff;
+  }
+  
+  .top-margin {
+    margin-top: 20px;
+    float: none;
+    text-align: left;
+  }
+  
+  .top-margin.more {
+    margin-top: 60px;
+  }
+  
+  .top-margin.more.add {
+    margin-top: 80px;
+  }
+  
+  .paragraph {
+    display: block;
+    margin: 25px auto;
+    padding: 0px;
+    font-family: Lora, sans-serif;
+    color: #464646;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: disc;
+  }
+  
+  .paragraph.white {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .paragraph.lighter {
+    color: #969696;
+  }
+  
+  .paragraph.more-gray {
+    color: #969696;
+    font-style: italic;
+  }
+  
+  .paragraph.not-block {
+    display: inline-block;
+    padding-right: 15px;
+    border-right: 1px solid #e1e1e1;
+  }
+  
+  .paragraph.not-block.margin {
+    margin-left: 15px;
+    border-right-style: none;
+  }
+  
+  .paragraph.not-block.margin.no {
+    padding-right: 0px;
+    border-right-style: none;
+  }
+  
+  .paragraph.copy {
+    margin-bottom: 0px;
+    color: #969696;
+    font-size: 12px;
+  }
+  
+  .paragraph.stat {
+    text-align: center;
+  }
+  
+  .paragraph.white-left {
+    color: #fff;
+    text-align: left;
+  }
+  
+  .paragraph.align-center {
+    color: #000;
+  }
+  
+  .paragraph.servicebox {
+    display: block;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .paragraph.tiny {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .paragraph.super-small {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .paragraph.about {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .left-padding {
+    padding-right: 0px;
+  }
+  
+  .left-padding.about-us {
+    padding-right: 0px;
+  }
+  
+  .line-divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 0px;
+    background-color: #e1e1e1;
+  }
+  
+  .line-divider.last {
+    margin-bottom: 0px;
+  }
+  
+  .div-block {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #d6d6d6;
+  }
+  
+  .div-block.full {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  
+  .light-wrapper:hover {
+    opacity: 0.8;
+  }
+  
+  .heading-2 {
+    color: #000;
+    font-size: 19px;
+    line-height: 29px;
+    text-align: center;
+  }
+  
+  .heading-2.white {
+    color: #fff;
+  }
+  
+  .heading-2.services {
+    margin-top: 0px;
+    padding-right: 0px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    text-align: left;
+  }
+  
+  .logo-slider {
+    top: 19px;
+    height: auto;
+    background-color: transparent;
+  }
+  
+  .slide-nav {
+    position: relative;
+    padding-top: 20px;
+    opacity: 0.7;
+    font-size: 10px;
+  }
+  
+  .slide-nav.white {
+    opacity: 1;
+  }
+  
+  .logo-wrapper {
+    width: 100%;
+    padding-top: 0px;
+    opacity: 0.8;
+    text-align: center;
+  }
+  
+  .logo-wrapper:hover {
+    opacity: 1;
+  }
+  
+  .service-wrapper {
+    height: auto;
+    padding: 30px 20px 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+  }
+  
+  .service-wrapper:hover {
+    box-shadow: 0 0 35px -12px #000, 0 0 6px 0 #fff;
+  }
+  
+  .service-wrapper.add-margin {
+    height: 150px;
+    margin-bottom: 0px;
+    padding-bottom: 39px;
+  }
+  
+  .service-wrapper.add-margin.contact:hover {
+    box-shadow: none;
+  }
+  
+  .service-wrapper.longer {
+    height: 420px;
+  }
+  
+  .service-wrapper.reference {
+    height: 500px;
+  }
+  
+  .service-wrapper.reference:hover {
+    box-shadow: none;
+  }
+  
+  .service-wrapper.faq {
+    height: auto;
+  }
+  
+  .service-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    background-image: url('https://onehr.un.org/images/Shape1.svg');
+    background-position: 50% 0px;
+    background-size: 34px;
+    background-repeat: no-repeat;
+  }
+  
+  .service-icon.icon-2 {
+    background-image: url('https://onehr.un.org/images/unverify.png');
+    background-position: 50% 50%;
+    background-size: 35px;
+    background-attachment: scroll;
+  }
+  
+  .service-icon.icon-3 {
+    background-image: url('https://onehr.un.org/images/shape5.svg');
+    background-size: 46px;
+  }
+  
+  .service-icon.icon-4 {
+    background-image: url('https://onehr.un.org/images/Shape4.svg');
+    background-position: 50% 50%;
+    background-size: 45px;
+  }
+  
+  .service-icon.icon-5 {
+    background-image: url('https://onehr.un.org/images/shape5.svg');
+    background-size: 45px;
+  }
+  
+  .service-icon.icon-6 {
+    background-image: url('https://onehr.un.org/images/shape6.svg');
+    background-size: 45px;
+  }
+  
+  .service-icon.icon-10 {
+    background-image: url('https://onehr.un.org/images/Shape2.svg');
+    background-position: 50% 50%;
+    background-size: 43px;
+  }
+  
+  .service-icon.icon-9 {
+    background-image: url('https://onehr.un.org/images/verify.png');
+    background-size: 50px;
+  }
+  
+  .service-content {
+    position: relative;
+    overflow: hidden;
+    padding-top: 5px;
+    text-align: left;
+  }
+  
+  .heading-4 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: none;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+  }
+  
+  .heading-4:hover {
+    color: #0265b5;
+  }
+  
+  .heading-4.biger {
+    font-size: 28px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .heading-4.move {
+    position: relative;
+    top: 4px;
+  }
+  
+  .heading-4.toggle {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .heading-4.service {
+    color: #0265b5;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .heading-4.service.expanded {
+    margin-bottom: 4px;
+    font-size: 17px;
+    text-align: left;
+  }
+  
+  .heading-4.title {
+    font-family: Lora, sans-serif;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .heading-4.title:hover {
+    color: #333;
+  }
+  
+  .heading-4.kpi {
+    font-size: 22px;
+    text-align: left;
+  }
+  
+  .heading-4.kpi:hover {
+    color: #333;
+  }
+  
+  .heading-4.name {
+    margin-top: 10px;
+    font-weight: 700;
+  }
+  
+  .heading-4.name:hover {
+    color: #333;
+  }
+  
+  .top-title {
+    margin-bottom: 40px;
+  }
+  
+  .top-title.center {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .top-title.more {
+    margin-bottom: 30px;
+  }
+  
+  .tab-testi {
+    top: 40px;
+    z-index: 3;
+    display: inline-block;
+    background-color: #fff;
+  }
+  
+  .testi-photo {
+    width: 85px;
+    height: 85px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 100%;
+    background-image: url('https://onehr.un.org/images/doctor-1.jpg');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+  
+  .testi-photo:hover {
+    opacity: 0.8;
+  }
+  
+  .testi-photo.w--current {
+    opacity: 1;
+  }
+  
+  .testi-photo.photo-2 {
+    background-image: url('https://onehr.un.org/images/doctor-3.jpeg');
+    background-size: contain;
+  }
+  
+  .testi-photo.photo-3 {
+    background-image: url('https://onehr.un.org/images/doctor-2.jpeg');
+    background-size: contain;
+  }
+  
+  .testi-photo.photo-3.w--current {
+    opacity: 1;
+  }
+  
+  .testi-wrapper {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    font-family: Lora, sans-serif;
+    color: #464646;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .fund-wrapper-2 {
+    display: block;
+    height: auto;
+    padding: 0px;
+    border-color: #0265b5;
+    border-right-style: none;
+    border-right-width: 1px;
+    border-left-style: none;
+    border-left-width: 1px;
+    text-align: center;
+  }
+  
+  .fund-wrapper-2.no-line {
+    border-right-style: none;
+  }
+  
+  .smaller {
+    color: #767676;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .normal {
+    color: #0265b5;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    border-top: 1px solid #e1e1e1;
+    background-color: #fff;
+  }
+  
+  .text-block {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .subscribe-wrapper {
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .sub-field {
+    width: 70%;
+    height: 50px;
+    padding-left: 20px;
+    float: left;
+    border-style: none;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 0px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #0265b5;
+  }
+  
+  .button:hover {
+    background-color: #212127;
+  }
+  
+  .button.middle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 250px;
+    margin-left: 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    float: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  .submit-button {
+    width: 30%;
+    height: 50px;
+    float: left;
+    background-color: #212127;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    font-family: Lora, sans-serif;
+  }
+  
+  .submit-button:hover {
+    background-color: #3a3a42;
+  }
+  
+  .expert-wrapper {
+    padding: 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+  }
+  
+  .expert-photo {
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+    float: left;
+    border-radius: 100%;
+    background-color: #212127;
+    background-image: url('https://onehr.un.org/images/1.jpg');
+    background-position: 50% 0px;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  
+  .expert-photo._2 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-right: 0px;
+    float: none;
+    background-image: url('https://onehr.un.org/images/testimonial2.jpg');
+    background-position: 50% 0px;
+    background-size: cover;
+  }
+  
+  .expert-photo._3 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-right: 0px;
+    float: none;
+    background-image: url('https://onehr.un.org/images/testimonial3.jpg');
+    background-position: 50% 50%;
+    background-size: 90px;
+  }
+  
+  .expert-photo._1 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-right: 0px;
+    float: none;
+    background-image: url('https://onehr.un.org/images/photo-naoual.jpg');
+    background-position: 50% 0px;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .expert-photo._4 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-right: 0px;
+    float: none;
+    background-image: url('https://onehr.un.org/images/testimonial4.jpg');
+    background-position: 68% -21px;
+    background-size: 125px;
+    text-align: center;
+  }
+  
+  .expert-photo._5 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-right: 0px;
+    float: none;
+    background-image: url('https://onehr.un.org/images/testimonial5.jpg');
+    background-position: 50% 35%;
+    background-size: 100px;
+  }
+  
+  .expert-content {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    float: left;
+    background-image: url('https://onehr.un.org/images/font-awesome_4-7-0_facebook_100_0_111111_none.png');
+    background-position: 50% 50%;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  
+  .social-icon:hover {
+    opacity: 1;
+  }
+  
+  .social-icon.twitter {
+    background-image: url('https://onehr.un.org/images/font-awesome_4-7-0_twitter_100_0_111111_none.png');
+  }
+  
+  .social-icon.google {
+    background-image: url('https://onehr.un.org/images/font-awesome_4-7-0_google-plus_100_0_111111_none.png');
+    background-size: 20px;
+  }
+  
+  .services-style-2 {
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    background-image: url('https://onehr.un.org/images/user-4.svg');
+    background-position: 0px 50%;
+    background-size: 35px;
+    background-repeat: no-repeat;
+  }
+  
+  .services-style-2.icon-2 {
+    background-image: url('https://onehr.un.org/images/diamond-4.svg');
+    background-size: 35px;
+  }
+  
+  .services-style-2.icon-3 {
+    background-image: url('https://onehr.un.org/images/settings-2.svg');
+    background-size: 35px;
+  }
+  
+  .services-style-2.icon-4 {
+    background-image: url('https://onehr.un.org/images/paper-plane-5.svg');
+    background-size: 35px;
+  }
+  
+  .services-style-2.icon-5 {
+    background-image: url('https://onehr.un.org/images/fingerprint-2.svg');
+    background-size: 35px;
+  }
+  
+  .services-style-2.icon-6 {
+    background-image: url('https://onehr.un.org/images/database.svg');
+    background-size: 35px;
+  }
+  
+  .text-field {
+    height: 50px;
+  }
+  
+  .text-field.quote {
+    width: 95%;
+  }
+  
+  .text-field.biger {
+    height: auto;
+    padding-bottom: 170px;
+  }
+  
+  .text-field.add-big {
+    height: auto;
+    padding-bottom: 140px;
+  }
+  
+  .toggle-header {
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .toggle-content {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .toggle-space {
+    padding: 20px 20px 10px 10px;
+  }
+  
+  .toggle-icon-plus {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://onehr.un.org/images/add.svg');
+    background-position: 50% 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+  }
+  
+  .toggle-icon-minus {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://onehr.un.org/images/subtract.svg');
+    background-position: 50% 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+  }
+  
+  .pricing-wrapper {
+    border: 1px solid #e1e1e1;
+    text-align: center;
+  }
+  
+  .top-pricing {
+    padding: 30px 10px 20px;
+  }
+  
+  .top-pricing.fixed {
+    padding-top: 20px;
+  }
+  
+  .option-pricing {
+    margin-top: -1px;
+    padding-top: 10px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .service-style-4 {
+    position: relative;
+    height: 700px;
+    padding: 70px 20px 20px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .center-icon {
+    position: absolute;
+    left: 50%;
+    top: -45px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e1e1e1;
+    border-radius: 100%;
+    background-color: #fff;
+    background-image: url('https://onehr.un.org/images/shape5.svg');
+    background-position: 50% 50%;
+    background-size: 46px;
+    background-repeat: no-repeat;
+    -webkit-transform: translate(-50%, 0px);
+    -ms-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+  }
+  
+  .center-icon.ico-2 {
+    background-image: url('https://onehr.un.org/images/Shape1.svg');
+    background-size: 34px;
+  }
+  
+  .center-icon.ico-3 {
+    background-image: url('https://onehr.un.org/images/Shape4.svg');
+    background-size: 48px;
+  }
+  
+  .center-icon.ico-4 {
+    background-image: url('https://onehr.un.org/images/fingerprint-2.svg');
+  }
+  
+  .center-icon.ico-5 {
+    background-image: url('https://onehr.un.org/images/user-4.svg');
+  }
+  
+  .center-icon.ico-6 {
+    background-image: url('https://onehr.un.org/images/database.svg');
+  }
+  
+  .quote-wrapper {
+    padding-right: 150px;
+    padding-left: 60px;
+    background-image: url('https://onehr.un.org/images/quote-circular-button.svg');
+    background-position: 0px 0px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    font-family: Lora, sans-serif;
+    color: #464646;
+    font-size: 19px;
+    line-height: 30px;
+  }
+  
+  .lightbox-link {
+    position: relative;
+  }
+  
+  .play-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .blog-wrapper {
+    width: 100%;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .blog-wrapper:hover {
+    color: #0ac876;
+  }
+  
+  .blog-wrapper.add-margin {
+    margin-bottom: 50px;
+  }
+  
+  .blog-image {
+    width: 50%;
+    margin-right: 20px;
+    float: left;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .blog-content {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .align-center {
+    margin-top: 20px;
+    padding-top: 0px;
+    text-align: center;
+  }
+  
+  .brand {
+    top: 5px;
+  }
+  
+  .line-divider-footer {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e1e1e1;
+  }
+  
+  .copyright {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-top: 1px solid #e1e1e1;
+  }
+  
+  .link-copy {
+    display: inline-block;
+    color: #464646;
+    text-decoration: none;
+  }
+  
+  .link-copy:hover {
+    text-decoration: underline;
+  }
+  
+  .link {
+    display: block;
+  }
+  
+  .link-2 {
+    display: inline-block;
+    margin-bottom: 10px;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    font-family: Lora, sans-serif;
+    color: #0265b5;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .link-2:hover {
+    color: #0265b5;
+  }
+  
+  .sub-banner {
+    height: 350px;
+    background-color: #0265b5;
+  }
+  
+  .div-block-2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .utility-page-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    max-height: 100%;
+    max-width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #0265b5;
+  }
+  
+  .utility-page-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .utility-page-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  
+  .dropdown-list {
+    border: 1px solid #e1e1e1;
+  }
+  
+  .dropdown-list.w--open {
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .drop-link {
+    font-family: Lora, sans-serif;
+    color: #969696;
+    font-size: 13px;
+  }
+  
+  .drop-link:hover {
+    color: #0265b5;
+  }
+  
+  .drop-link.w--current {
+    color: #0265b5;
+  }
+  
+  .dropdown-link {
+    font-size: 13px;
+  }
+  
+  .image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .image._404 {
+    padding-bottom: 10px;
+  }
+  
+  .slider-banner {
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  .slide-1 {
+    display: block;
+    background-image: url('https://onehr.un.org/images/img_slider01.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .arrow-slider {
+    overflow: visible;
+    width: 0px;
+    height: 60px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: #212127;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    font-size: 20px;
+  }
+  
+  .arrow-slider:hover {
+    background-color: #0ac876;
+  }
+  
+  .biger {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .biger.more {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  
+  .slide-2 {
+    background-image: url('https://onehr.un.org/images/img_slider03.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .move-down {
+    margin-top: 50px;
+  }
+  
+  .div-block-4 {
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+  
+  .success-message {
+    background-color: #086940;
+    color: #fff;
+  }
+  
+  .scroll-navigation {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 9999;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+  }
+  
+  .text-span {
+    color: #0265b5;
+  }
+  
+  .row {
+    padding-bottom: 20px;
+  }
+  
+  .div-block-6 {
+    padding-bottom: 0px;
+  }
+  
+  .link-3 {
+    color: #0265b5;
+    text-decoration: none;
+  }
+  
+  .link-4 {
+    color: #0265b5;
+    text-decoration: none;
+  }
+  
+  .column {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .text-block-2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .text-block-3 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .row-2 {
+    margin: 10px 0px;
+    padding: 10px 0px;
+  }
+  
+  .row-3 {
+    padding: 20px;
+  }
+  
+  .image-2 {
+    padding-top: 22px;
+  }
+  
+  .div-block-7 {
+    margin-top: 30px;
+    padding-top: 0px;
+  }
+  
+  .container {
+    display: block;
+    height: 50px;
+  }
+  
+  .container-2 {
+    height: 50px;
+  }
+  
+  .container-3 {
+    height: 50px;
+  }
+  
+  .container-4 {
+    height: 50px;
+  }
+  
+  .div-block-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .div-block-9 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  
+  .div-block-8 {
+    padding-bottom: 80px;
+  }
+  
+  .image-3 {
+    margin-top: 55px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .unordered-list {
+    list-style-type: disc;
+  }
+  
+  .button-2 {
+    display: block;
+    margin-top: 31px;
+    margin-right: 60px;
+    margin-left: 60px;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 0 6px 0 #fff, inset 0 1px 0 0 rgba(0, 0, 0, .5);
+    opacity: 0.8;
+    text-align: center;
+  }
+  
+  .button-2:hover {
+    opacity: 1;
+  }
+  
+  .section-alone {
+    position: relative;
+    padding: 50px 10px 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .section-alone.gray {
+    background-color: #f1f1f7;
+  }
+  
+  .section-alone.no-bottom-margin {
+    padding-bottom: 0px;
+  }
+  
+  .section-alone.with-line {
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+  }
+  
+  .section-alone.with-line.more {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-top-style: none;
+  }
+  
+  .section-alone.with-color {
+    background-color: #0ac876;
+  }
+  
+  .section-alone.with-color.with-map {
+    background-color: #0265b5;
+    background-image: url('https://onehr.un.org/images/map-2.png');
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .section-alone.with-color.less-space {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .section-alone.with-image {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .17), rgba(0, 0, 0, .17)), url('https://onehr.un.org/images/bench-accounting-49027.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .17), rgba(0, 0, 0, .17)), url('https://onehr.un.org/images/bench-accounting-49027.jpg');
+    background-position: 0px 0px, 50% 100%;
+    background-size: auto, cover;
+    background-attachment: scroll, fixed;
+  }
+  
+  .section-alone.no2 {
+    padding-bottom: 50px;
+  }
+  
+  .div-block-11 {
+    padding-top: 0px;
+    padding-bottom: 51px;
+  }
+  
+  .line-divider-2 {
+    width: 100%;
+    height: 1px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: #e1e1e1;
+  }
+  
+  .column-5 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  .div-block-12 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 600px;
+    margin-right: 2px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: none;
+  }
+  
+  .row-4 {
+    position: relative;
+    left: 0px;
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+    float: none;
+    clear: none;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+  .container-5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .column-6 {
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .column-7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .div-block-13 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+  }
+  
+  .image-4 {
+    display: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .heading-5 {
+    text-align: center;
+  }
+  
+  .link-5 {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .link-6 {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .link-7 {
+    color: #fff;
+  }
+  
+  .link-8 {
+    color: #fff;
+  }
+  
+  .link-9 {
+    color: #fff;
+  }
+  
+  .link-10 {
+    color: #fff;
+  }
+  
+  .link-11 {
+    color: #fff;
+  }
+  
+  .link-12 {
+    color: #fff;
+  }
+  
+  .link-13 {
+    color: #fff;
+  }
+  
+  .link-14 {
+    color: #fff;
+  }
+  
+  .text-block-4 {
+    font-family: Lora, sans-serif;
+    text-align: center;
+  }
+  
+  .top-margin-expert {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    float: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .top-margin-expert.more {
+    margin-top: 60px;
+  }
+  
+  .top-margin-expert.more.add {
+    margin-top: 80px;
+  }
+  
+  .unordered-list-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+  }
+  
+  .unordered-list-2.footer {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    padding-top: 30px;
+    border-top-style: none;
+  }
+  
+  .column-8 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  
+  .link-block {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .link-block-2 {
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .link-block-3 {
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .link-block-4 {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .link2 {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .person {
+    width: 70px;
+    margin-bottom: 13px;
+    border-radius: 100%;
+  }
+  
+  .name {
+    font-weight: 500;
+  }
+  
+  .testimony-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    font-family: Lora, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .section-2 {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    background-color: #f1f1f7;
+  }
+  
+  .slider-arrow {
+    width: 50px;
+    -webkit-transition: color 300ms ease;
+    transition: color 300ms ease;
+    color: #bdbdbd;
+    font-size: 32px;
+  }
+  
+  .slider-arrow:hover {
+    color: #0265b5;
+  }
+  
+  .testimony-slide {
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+  }
+  
+  .slide-nav-2 {
+    display: none;
+    font-size: 10px;
+  }
+  
+  .testimonial-slider {
+    display: block;
+    height: auto;
+    max-width: auto;
+    margin-top: 45px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .heading-6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 51px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .image-5 {
+    display: block;
+  }
+  
+  .section-3 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #4d4d4d;
+  }
+  
+  .section-3.beige {
+    background-color: #c7aa8b;
+  }
+  
+  .number {
+    margin-top: -22px;
+    margin-bottom: 2px;
+    padding-top: 0px;
+    color: rgba(50, 50, 50, .09);
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .process-titles {
+    margin-bottom: 23px;
+    padding-top: 23px;
+    border-top: 1px solid rgba(50, 50, 50, .13);
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .icon-wrapper {
+    height: 109px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .container-6 {
+    position: static;
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+    clear: none;
+  }
+  
+  .row-5 {
+    display: block;
+    width: 1400px;
+    float: left;
+  }
+  
+  .main-subheading {
+    margin-top: 18px;
+    margin-bottom: 44px;
+    font-family: Vollkorn, serif;
+    color: hsla(0, 0%, 100%, .81);
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  .slide {
+    position: static;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url('https://onehr.un.org/images/cover1.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: center;
+  }
+  
+  .slide._3 {
+    background-image: url('https://onehr.un.org/images/cover3.jpg');
+    background-position: 50% 50%;
+  }
+  
+  .slide._2 {
+    background-image: url('https://onehr.un.org/images/cover2.jpg');
+  }
+  
+  .slide._4 {
+    height: 700px;
+    background-image: url('https://onehr.un.org/images/cover4.jpg');
+    background-position: 50% 50%;
+  }
+  
+  .slide._5 {
+    background-image: url('https://onehr.un.org/images/cover5.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  
+  .slide._6 {
+    background-image: url('https://onehr.un.org/images/cover6.jpg');
+    background-position: 50% 50%;
+  }
+  
+  .slide._7 {
+    background-image: url('https://onehr.un.org/images/cover4.jpg');
+  }
+  
+  .slide._8 {
+    background-image: -webkit-linear-gradient(0deg, #c1ccd8, #e4eaf2);
+    background-image: linear-gradient(90deg, #c1ccd8, #e4eaf2);
+  }
+  
+  .main-heading {
+    margin-top: 0px;
+    color: #fff;
+    font-size: 79px;
+    line-height: 66px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  .main-heading.bold {
+    position: relative;
+    font-weight: 700;
+  }
+  
+  .slider {
+    position: static;
+    display: block;
+    height: 700px;
+    clear: none;
+    background-color: transparent;
+  }
+  
+  .slider-nav {
+    display: none;
+    float: none;
+    font-size: 9px;
+    line-height: 10px;
+  }
+  
+  .button-3 {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    background-color: rgba(77, 77, 77, .2);
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .button-3:hover {
+    background-color: #fff;
+    color: #323232;
+  }
+  
+  .horizontal-bar {
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  .container-7 {
+    display: block;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .fund-wrapper-1 {
+    display: block;
+    height: auto;
+    padding: 0px;
+    border-style: none;
+    border-color: #0265b5;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    text-align: center;
+  }
+  
+  .fund-wrapper-1.no-line {
+    border-right-style: none;
+  }
+  
+  .div-block-14 {
+    display: block;
+    margin-top: 64px;
+    float: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .paragraph-ul {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 0px 0px 0px 64px;
+    font-family: Lora, sans-serif;
+    color: #464646;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: disc;
+  }
+  
+  .paragraph-ul.white {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .paragraph-ul.lighter {
+    color: #969696;
+  }
+  
+  .paragraph-ul.more-gray {
+    color: #969696;
+    font-style: italic;
+  }
+  
+  .paragraph-ul.not-block {
+    display: inline-block;
+    padding-right: 15px;
+    border-right: 1px solid #e1e1e1;
+  }
+  
+  .paragraph-ul.not-block.margin {
+    margin-left: 15px;
+    border-right-style: none;
+  }
+  
+  .paragraph-ul.not-block.margin.no {
+    padding-right: 0px;
+    border-right-style: none;
+  }
+  
+  .paragraph-ul.copy {
+    margin-bottom: 0px;
+    color: #969696;
+    font-size: 12px;
+  }
+  
+  .paragraph-ul.stat {
+    text-align: center;
+  }
+  
+  .paragraph-ul.white-left {
+    color: #fff;
+    text-align: left;
+  }
+  
+  .paragraph-ul.servicebox {
+    text-decoration: none;
+  }
+  
+  .section-4 {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #fff;
+  }
+  
+  .section-4.tint {
+    background-color: #fff;
+  }
+  
+  .section-4.feature-section {
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .section-4.feature-section.odd {
+    border-top: 1px solid #ececec;
+    background-color: #fafafa;
+  }
+  
+  .section-4.dark {
+    overflow: hidden;
+    border: 0px solid #000;
+    background-color: #f1f1f7;
+    color: #fff;
+  }
+  
+  .section-4.dark.video {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .testimonial-name {
+    color: #1f6fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .testimonial-name.subtitle {
+    margin-top: 5px;
+    color: #b3b3b3;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+  
+  .testimonial-info-block {
+    margin-top: 20px;
+  }
+  
+  .testimonial-slide {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+  }
+  
+  .testimonial-block {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    overflow: visible;
+    padding-right: 40px;
+    padding-left: 200px;
+  }
+  
+  .container-8 {
+    position: relative;
+  }
+  
+  .container-8.testimonial-container {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    right: 0px;
+    -webkit-transform: translate(0px, -50%);
+    -ms-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
+  }
+  
+  .container-8.centered {
+    text-align: center;
+  }
+  
+  .container-8.centered.pow {
+    margin-top: 27px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .testimonial-image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 140px;
+    margin-top: 8px;
+    border-radius: 4px;
+  }
+  
+  .testimonial-quote {
+    font-size: 19px;
+    line-height: 29px;
+    font-weight: 300;
+  }
+  
+  .testimonial-slider-arrow {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .1);
+    border-radius: 100%;
+    background-color: transparent;
+    -webkit-transition: border 200ms ease, background-color 200ms ease;
+    transition: border 200ms ease, background-color 200ms ease;
+    color: #000;
+    font-size: 15px;
+  }
+  
+  .testimonial-slider-arrow:hover {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .testimonial-slider-2 {
+    height: 200px;
+    background-color: transparent;
+  }
+  
+  .feature-info-title {
+    margin-top: 8px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .section-title-wrapper {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    text-align: center;
+  }
+  
+  .section-title-wrapper.full {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .section-title-wrapper.full.below-video {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section-title {
+    margin-top: 0px;
+    font-size: 46px;
+    line-height: 39px;
+    font-weight: 300;
+  }
+  
+  .feature-info-paragraph {
+    opacity: 0.7;
+    font-size: 14px;
+  }
+  
+  .feature-info-column {
+    padding-right: 10px;
+  }
+  
+  .section-description {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 300;
+  }
+  
+  .section-description.small {
+    width: 70%;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .feature-info-block {
+    position: relative;
+    width: 90%;
+    text-align: justify;
+  }
+  
+  .image-section-overlay {
+    width: 100%;
+    height: 100%;
+    padding-top: 145px;
+    padding-bottom: 105px;
+    background-color: rgba(44, 46, 49, .7);
+    color: #fff;
+  }
+  
+  .image-section-overlay.color {
+    display: block;
+    background-color: rgba(31, 111, 255, .9);
+  }
+  
+  .feature-info-row {
+    margin-top: 45px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .feature-info-row._2nd {
+    position: static;
+    display: block;
+    width: auto;
+    margin-top: 10px;
+    float: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .feature-info-icon {
+    height: 35px;
+    margin-right: 15px;
+    float: left;
+  }
+  
+  .bold-text {
+    font-family: Lora, sans-serif;
+    text-align: left;
+    text-transform: none;
+  }
+  
+  .row-2-short {
+    margin: 10px 0px;
+    padding: 10px 150px;
+  }
+  
+  .heading-q {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: none;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+  }
+  
+  .heading-q.biger {
+    font-size: 28px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .heading-q.move {
+    position: relative;
+    top: 4px;
+  }
+  
+  .heading-q.toggle {
+    display: inline-block;
+  }
+  
+  .heading-q.service {
+    color: #0265b5;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .heading-q.title {
+    font-family: Lora, sans-serif;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .bold-text-2 {
+    color: #0265b5;
+  }
+  
+  .button-about {
+    position: static;
+    display: block;
+    overflow: visible;
+    margin-top: 49px;
+    padding: 12px 20px 12px 0px;
+    float: none;
+    clear: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border-radius: 10px;
+    background-color: #0265b5;
+    text-align: center;
+  }
+  
+  .button-about:hover {
+    background-color: #212127;
+  }
+  
+  .column-11 {
+    height: 150px;
+  }
+  
+  .long-feature-icon-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    border-style: none;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .1);
+    border-radius: 7px;
+    text-align: center;
+  }
+  
+  .feature-intro-title {
+    margin-bottom: 5px;
+    color: #bebebe;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .main-feature-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 37px;
+  }
+  
+  .long-feature-icon {
+    height: 25px;
+  }
+  
+  .long-feature-block {
+    position: relative;
+    margin-top: 5px;
+    padding: 5px 0px 5px 65px;
+  }
+  
+  .long-feature-block.title-only {
+    margin-top: 15px;
+    padding-top: 3px;
+    padding-left: 75px;
+  }
+  
+  .long-feature-title {
+    margin-bottom: 14px;
+    font-size: 19px;
+  }
+  
+  .long-feature-title.uppercase {
+    margin-bottom: 4px;
+    float: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: none;
+  }
+  
+  .browser-mockup-left {
+    position: absolute;
+    left: -370px;
+    top: -25px;
+    width: 790px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    box-shadow: 4px 4px 33px 0 rgba(0, 0, 0, .1);
+  }
+  
+  .small-paragraph {
+    margin-bottom: 0px;
+    color: #838383;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .small-features-wrapper {
+    margin-top: 0px;
+    margin-left: 42px;
+  }
+  
+  .feature-text-block {
+    width: 440px;
+    float: left;
+  }
+  
+  .feature-text-block.right {
+    float: right;
+  }
+  
+  .column-12 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .row-6 {
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+  
+  .row-7 {
+    padding-top: 40px;
+  }
+  
+  .column-13 {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  
+  .div-block-15 {
+    margin-left: 30px;
+  }
+  
+  .video-lightbox-icon {
+    height: 25px;
+  }
+  
+  .video-lightbox-block {
+    overflow: hidden;
+    height: 400px;
+    border-radius: 4px;
+    background-image: url('https://onehr.un.org/images/Photo-8.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  
+  .video-lightbox-block.about-us {
+    margin-top: 0px;
+    background-image: none;
+  }
+  
+  .video-lightbox-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .button-4 {
+    margin-top: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 3px;
+    background-color: #1f6fff;
+    -webkit-transition: background-color 200ms ease, background-position 200ms ease, color 200ms ease, border 200ms ease, box-shadow 200ms ease;
+    transition: background-color 200ms ease, background-position 200ms ease, color 200ms ease, border 200ms ease, box-shadow 200ms ease;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .button-4:hover {
+    background-color: #0b4fc9;
+    box-shadow: 0 8px 16px 4px rgba(0, 0, 0, .3);
+    color: #fff;
+  }
+  
+  .button-4._2 {
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, .6);
+  }
+  
+  .button-4._2:hover {
+    background-color: #fff;
+    color: #1f6fff;
+  }
+  
+  .button-4._2.green {
+    background-color: #5ec045;
+  }
+  
+  .button-4._2.green:hover {
+    background-color: #73d859;
+    color: #fff;
+  }
+  
+  .video-lightbox-button {
+    position: absolute;
+    left: 0px;
+    top: 53%;
+    right: 0px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 16px;
+    padding-left: 2px;
+    border-radius: 100%;
+    background-color: #5ec045;
+    -webkit-transform: translate(0px, -50%);
+    -ms-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+    text-align: center;
+  }
+  
+  .video-lightbox-button:hover {
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, .5);
+    -webkit-transform: translate(0px, -50%) scale(1.2);
+    -ms-transform: translate(0px, -50%) scale(1.2);
+    transform: translate(0px, -50%) scale(1.2);
+  }
+  
+  .video-lightbox-button.line {
+    padding-top: 16px;
+    padding-left: 3px;
+    border: 2px solid #fff;
+    background-color: transparent;
+  }
+  
+  .video-lightbox {
+    display: block;
+    width: 100%;
+    margin-top: 53px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('https://onehr.un.org/images/maxresdefault.jpg');
+    background-position: 50% 18%;
+    background-size: cover;
+    box-shadow: 0 0 23px 0 rgba(0, 0, 0, .3);
+  }
+  
+  .video-lightbox.pow {
+    margin-top: 83px;
+    background-image: url('https://onehr.un.org/images/OneHR-Powtoon-Screen.jpeg');
+  }
+  
+  .list-item {
+    font-family: Lora, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .row-8 {
+    padding-top: 22px;
+  }
+  
+  .div-block-16 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    float: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  
+  .heading-4-no-hover {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: none;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+  }
+  
+  .heading-4-no-hover.biger {
+    font-size: 28px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .heading-4-no-hover.move {
+    position: relative;
+    top: 4px;
+  }
+  
+  .heading-4-no-hover.toggle {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .heading-4-no-hover.service {
+    color: #0265b5;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .heading-4-no-hover.service.expanded {
+    margin-bottom: 4px;
+    font-size: 17px;
+    text-align: left;
+  }
+  
+  .heading-4-no-hover.title {
+    font-family: Lora, sans-serif;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .column-14 {
+    margin-top: 30px;
+    border-right: 1px solid #0265b5;
+  }
+  
+  .row-10 {
+    margin-bottom: 30px;
+  }
+  
+  .div-block-17 {
+    margin-bottom: 0px;
+  }
+  
+  .text-block-5 {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #0265b5;
+    font-size: 11px;
+    text-decoration: none;
+  }
+  
+  .link-block-5 {
+    color: #818181;
+    text-decoration: none;
+  }
+  
+  .image-6 {
+    margin-top: 9px;
+  }
+  
+  .process-tab-menu {
+    margin-top: -50px;
+    text-align: center;
+  }
+  
+  .process-tabs-line {
+    width: 100%;
+    height: 1px;
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .process-tab-pane {
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  
+  .process-tab-button {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 32px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border: 0px solid transparent;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 transparent;
+    -webkit-transition: box-shadow 200ms ease;
+    transition: box-shadow 200ms ease;
+    font-family: Poppins, sans-serif;
+    color: #c7c7c7;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .process-tab-button:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    color: #0265b5;
+  }
+  
+  .process-tab-button.w--current {
+    border-color: rgba(0, 0, 0, .1);
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    font-family: Poppins, sans-serif;
+    color: #0265b5;
+    text-align: center;
+  }
+  
+  .process-tab-button.today {
+    padding-top: 38px;
+  }
+  
+  .process-tab-button.today.w--current {
+    color: #0265b5;
+  }
+  
+  .process-tab-col-left {
+    padding-right: 40px;
+  }
+  
+  .process-tab-icon {
+    height: 30px;
+    margin-bottom: 6px;
+  }
+  
+  .text-column-title {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .text-column-title.number {
+    margin-right: 10px;
+    color: #1f6fff;
+  }
+  
+  .text-column {
+    padding-right: 20px;
+  }
+  
+  .top-line-block {
+    margin-top: 35px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+  
+  .text-block-6 {
+    font-family: Poppins, sans-serif;
+    font-size: 11px;
+  }
+  
+  .bold-text-3 {
+    color: #0265b5;
+    font-size: 22px;
+  }
+  
+  .bold-text-4 {
+    color: #0265b5;
+    font-size: 22px;
+  }
+  
+  .bold-text-5 {
+    color: #0265b5;
+    font-size: 22px;
+  }
+  
+  .bold-text-6 {
+    color: #0265b5;
+    font-size: 22px;
+  }
+  
+  .bold-text-7 {
+    color: #0265b5;
+    font-size: 22px;
+  }
+  
+  .bold-text-8 {
+    color: #0265b5;
+    font-size: 22px;
+  }
+  
+  .row-11 {
+    display: block;
+  }
+  
+  .column-15 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  
+  html.w-mod-js *[data-ix="scroll-navbar-control"] {
+    -webkit-transform: translate(0px, -100%);
+    -ms-transform: translate(0px, -100%);
+    transform: translate(0px, -100%);
+  }
+  
+  @media (max-width: 991px) {
+    .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navbar.style-2 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navbar.color {
+      background-color: #0ac876;
+    }
+    .section.with-line.more {
+      padding-bottom: 0px;
+    }
+    .section.with-image {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .heading-1 {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .heading-1.white.biger {
+      font-size: 35px;
+    }
+    .paragraph {
+      padding: 10px;
+    }
+    .paragraph.copy {
+      padding-left: 20px;
+    }
+    .paragraph.servicebox {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    .paragraph.super-small.servicebox {
+      text-align: left;
+    }
+    .paragraph.super-small.serviceboxsmall {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .paragraph.super-small.reference {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    .paragraph.intro {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .left-padding {
+      padding-right: 0px;
+    }
+    .service-wrapper {
+      height: 300px;
+      margin-bottom: 20px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    .service-wrapper.longer {
+      height: 500px;
+    }
+    .service-wrapper.reference {
+      height: 680px;
+    }
+    .service-icon {
+      width: 60px;
+      height: 60px;
+    }
+    .fund-wrapper-2 {
+      height: auto;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .subscribe-wrapper {
+      width: 70%;
+    }
+    .expert-wrapper {
+      margin-bottom: 20px;
+    }
+    .service-style-4 {
+      height: auto;
+      margin-bottom: 70px;
+    }
+    .brand {
+      top: 11px;
+    }
+    .biger {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    .move-down {
+      margin-top: 0px;
+    }
+    .menu-button:active {
+      display: block;
+      background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    }
+    .menu-button.w--open {
+      background-color: #0265b5;
+    }
+    .nav-menu {
+      padding: 20px 10px;
+      background-color: #f1f1f7;
+    }
+    .nav-menu.color {
+      background-color: rgba(0, 0, 0, .9);
+    }
+    .div-block-3 {
+      margin-bottom: 20px;
+    }
+    .div-block-4 {
+      margin-bottom: 20px;
+    }
+    .white-icon {
+      color: #fff;
+    }
+    .white-icon.w--open {
+      background-color: #0ac876;
+    }
+    .scroll-navigation {
+      display: block;
+    }
+    .div-block-6 {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .button-2 {
+      margin-right: 29px;
+      margin-left: 30px;
+      padding-top: 10px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+    }
+    .section-alone {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .section-alone.no2 {
+      padding-top: 0px;
+    }
+    .unordered-list-2 {
+      padding-left: 20px;
+    }
+    .column-8 {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .column-9 {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .column-10 {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .main-heading {
+      margin-bottom: 4px;
+      font-size: 68px;
+    }
+    .slider {
+      height: 469px;
+    }
+    .fund-wrapper-1 {
+      height: auto;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .paragraph-ul {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .paragraph-ul.copy {
+      padding-left: 20px;
+    }
+    .section-4 {
+      padding: 45px;
+    }
+    .section-4.feature-section {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .testimonial-block {
+      padding-right: 0px;
+    }
+    .container-8.centered.pow {
+      margin-top: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .testimonial-quote {
+      font-size: 15px;
+    }
+    .testimonial-slider-arrow {
+      width: 30px;
+      height: 30px;
+      margin-right: -20px;
+      margin-left: -20px;
+      font-size: 13px;
+    }
+    .feature-info-title {
+      margin-top: 0px;
+      font-size: 17px;
+    }
+    .section-title-wrapper {
+      width: 85%;
+      margin-bottom: 40px;
+    }
+    .section-title-wrapper.full {
+      margin-bottom: 20px;
+      padding-right: 40px;
+    }
+    .section-title {
+      margin-bottom: 4px;
+      font-size: 31px;
+      line-height: 30px;
+    }
+    .feature-info-paragraph {
+      text-align: left;
+    }
+    .section-description {
+      margin-top: 20px;
+      font-size: 19px;
+    }
+    .section-description.small {
+      width: 80%;
+    }
+    .image-section-overlay {
+      padding: 90px 45px;
+    }
+    .image-section-overlay.color {
+      padding: 90px 45px;
+    }
+    .feature-info-icon {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .browser-mockup-left {
+      left: -360px;
+      top: 4px;
+      width: 580px;
+    }
+    .small-features-wrapper {
+      margin-left: 0px;
+    }
+    .feature-text-block {
+      width: 400px;
+    }
+    .video-lightbox-block.about-us {
+      height: 250px;
+    }
+    .video-lightbox-overlay {
+      display: block;
+    }
+    .column-14 {
+      margin-top: 12px;
+    }
+    .row-9 {
+      display: block;
+    }
+    .process-tab-menu {
+      margin-top: 0px;
+    }
+    .process-tabs-line {
+      display: none;
+      overflow: visible;
+    }
+    .process-tab-pane {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    .process-tab-button {
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, .1);
+    }
+    .process-tab-col-left {
+      padding-right: 30px;
+    }
+    .text-column-title {
+      font-size: 13px;
+    }
+    .text-column {
+      padding-right: 10px;
+      padding-bottom: 10px;
+    }
+    .column-16 {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .banner {
+      height: 800px;
+    }
+    .section {
+      display: block;
+    }
+    .section.with-line.more {
+      padding-bottom: 0px;
+    }
+    .section.with-image {
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+    .heading-1 {
+      text-align: center;
+    }
+    .heading-1.smaller {
+      display: block;
+      text-align: center;
+    }
+    .heading-1.small {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .heading-1.white.biger {
+      text-align: center;
+    }
+    .heading-1.logos {
+      text-align: center;
+    }
+    .left-padding {
+      margin-bottom: 20px;
+      padding-right: 0px;
+    }
+    .div-block.full {
+      margin-bottom: 20px;
+    }
+    .logo-wrapper {
+      margin-bottom: 20px;
+    }
+    .service-wrapper {
+      height: auto;
+    }
+    .service-wrapper.longer {
+      height: auto;
+    }
+    .service-wrapper.reference {
+      height: auto;
+    }
+    .top-title.center {
+      display: block;
+    }
+    .fund-wrapper-2 {
+      height: auto;
+      padding-right: 0px;
+      padding-left: 0px;
+      border-right-style: none;
+    }
+    .subscribe-wrapper {
+      width: 90%;
+    }
+    .button.middle {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .text-field.quote {
+      width: 100%;
+    }
+    .toggle-header {
+      padding-left: 0px;
+    }
+    .toggle-space {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .pricing-wrapper {
+      margin-bottom: 20px;
+    }
+    .service-style-4 {
+      height: auto;
+      margin-bottom: 70px;
+    }
+    .quote-wrapper {
+      padding-right: 0px;
+    }
+    .blog-wrapper {
+      margin-bottom: 20px;
+    }
+    .biger {
+      margin-right: 0px;
+    }
+    .move-down {
+      margin-bottom: 50px;
+    }
+    .div-block-5 {
+      margin-bottom: 20px;
+    }
+    .button-2 {
+      margin-right: 80px;
+      margin-left: 80px;
+    }
+    .section-alone {
+      padding-bottom: 30px;
+    }
+    .column-6 {
+      display: inline-block;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+    .column-7 {
+      display: inline-block;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+    .div-block-13 {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 auto;
+      -ms-flex: 0 auto;
+      flex: 0 auto;
+    }
+    .unordered-list-2.footer {
+      padding-top: 0px;
+    }
+    .section-2 {
+      padding-top: 43px;
+      padding-bottom: 43px;
+      text-align: center;
+    }
+    .section-3 {
+      padding: 34px 10px;
+    }
+    .number {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+    .icon-wrapper {
+      height: 102px;
+    }
+    .slide {
+      padding: 50px 10px;
+    }
+    .main-heading {
+      font-size: 50px;
+      line-height: 44px;
+    }
+    .slider {
+      height: 392px;
+    }
+    .fund-wrapper-1 {
+      height: auto;
+      padding-right: 0px;
+      padding-left: 0px;
+      border-right-style: none;
+    }
+    .div-block-14 {
+      margin-top: 38px;
+    }
+    .section-4 {
+      padding: 25px;
+    }
+    .section-4.feature-section {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .testimonial-block {
+      position: relative;
+      padding-right: 30px;
+      padding-left: 30px;
+      text-align: center;
+    }
+    .container-8.testimonial-container {
+      position: relative;
+      top: 0%;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+    .container-8.centered {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .testimonial-image {
+      position: static;
+      display: block;
+      width: 90px;
+      height: 90px;
+      margin: 0px auto 10px;
+    }
+    .testimonial-quote {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .testimonial-slider-2 {
+      height: auto;
+    }
+    .feature-info-title {
+      margin-bottom: 13px;
+    }
+    .section-title-wrapper {
+      width: 95%;
+      margin-bottom: 40px;
+    }
+    .section-title-wrapper.full {
+      margin-bottom: 30px;
+    }
+    .section-title-wrapper.full.below-video {
+      margin-bottom: 0px;
+      padding-right: 0px;
+    }
+    .section-title {
+      margin-bottom: 10px;
+      font-size: 26px;
+      line-height: 30px;
+    }
+    .feature-info-column {
+      padding-right: 0px;
+      padding-bottom: 10px;
+      padding-left: 0px;
+    }
+    .section-description.small {
+      width: 100%;
+      font-size: 18px;
+    }
+    .image-section-overlay {
+      padding: 60px 25px;
+    }
+    .image-section-overlay.color {
+      padding: 25px;
+    }
+    .feature-info-row {
+      margin-top: 0px;
+    }
+    .feature-info-icon {
+      margin-top: -12px;
+    }
+    .long-feature-block {
+      padding-left: 60px;
+    }
+    .browser-mockup-left {
+      position: relative;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .small-features-wrapper {
+      margin-left: 0px;
+    }
+    .feature-text-block {
+      width: 100%;
+    }
+    .video-lightbox-block {
+      height: 260px;
+    }
+    .column-14 {
+      padding-right: 0px;
+      padding-bottom: 0px;
+      border-style: none;
+      border-bottom-width: 1px;
+      border-bottom-color: #0265b5;
+    }
+    .process-tab-col-right {
+      padding-left: 0px;
+    }
+    .process-tab-menu {
+      margin-top: -20px;
+    }
+    .process-tab-pane {
+      padding-top: 40px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .process-tab-button {
+      width: 80px;
+      height: 80px;
+      margin-right: 9px;
+      margin-left: 9px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, .1);
+      font-size: 10px;
+      line-height: 12px;
+    }
+    .process-tab-button.today.w--current {
+      padding-top: 35px;
+    }
+    .process-tab-col-left {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .process-tab-icon {
+      height: 23px;
+    }
+    .text-column {
+      padding-right: 0px;
+      padding-bottom: 10px;
+      padding-left: 0px;
+    }
+    .top-line-block {
+      margin-top: 25px;
+      padding-top: 30px;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .banner.with-slider {
+      height: 500px;
+    }
+    .banner.style-3 {
+      height: 400px;
+    }
+    .section {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .section.gray {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .section.no-bottom-margin {
+      padding-bottom: 10px;
+    }
+    .section.with-line.more {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .heading-1 {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .heading-1.white.biger {
+      font-size: 30px;
+    }
+    .heading-1.logos {
+      text-align: center;
+    }
+    .paragraph {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .paragraph.not-block {
+      padding-right: 5px;
+    }
+    .paragraph.not-block.margin {
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+    .paragraph.servicebox {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .paragraph.intro {
+      margin-left: auto;
+    }
+    .div-block {
+      margin-bottom: 20px;
+    }
+    .heading-2.services {
+      text-align: center;
+    }
+    .service-wrapper {
+      height: auto;
+    }
+    .service-wrapper.longer {
+      height: auto;
+    }
+    .service-wrapper.faq {
+      height: auto;
+    }
+    .heading-4.title {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .tab-testi {
+      top: auto;
+    }
+    .testi-photo {
+      display: inline-block;
+    }
+    .testi-wrapper {
+      width: 100%;
+    }
+    .fund-wrapper-2 {
+      height: auto;
+      margin-bottom: 10px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+    .subscribe-wrapper {
+      width: 100%;
+    }
+    .sub-field {
+      width: 60%;
+    }
+    .submit-button {
+      width: 40%;
+    }
+    .service-style-4 {
+      height: auto;
+    }
+    .blog-image {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      float: none;
+    }
+    .biger {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    .biger.more {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .div-block-3 {
+      margin-bottom: 0px;
+    }
+    .div-block-4 {
+      padding-left: 0px;
+    }
+    .row-2 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .image-2 {
+      padding-top: 0px;
+    }
+    .column-2 {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .column-3 {
+      display: none;
+    }
+    .column-4 {
+      padding-top: 0px;
+    }
+    .section-alone {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .section-alone.no-bottom-margin {
+      padding-bottom: 10px;
+    }
+    .container-5 {
+      padding-top: 0px;
+    }
+    .div-block-13 {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
+    .unordered-list-2 {
+      padding-left: 20px;
+    }
+    .testimony-text {
+      padding-right: 10px;
+      text-align: center;
+    }
+    .testimony-slide {
+      text-align: center;
+    }
+    .heading-6 {
+      margin-top: 10px;
+      padding-top: 0px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .slide {
+      padding-top: 58px;
+      padding-bottom: 58px;
+    }
+    .main-heading {
+      width: 100%;
+      font-size: 48px;
+    }
+    .slider {
+      height: 476px;
+    }
+    .fund-wrapper-1 {
+      height: auto;
+      margin-bottom: 10px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+    .div-block-14 {
+      margin-top: 41px;
+    }
+    .paragraph-ul.not-block.margin {
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+    .section-4 {
+      padding: 25px;
+    }
+    .testimonial-block {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    .testimonial-image {
+      width: 70px;
+      height: 70px;
+    }
+    .testimonial-quote {
+      font-size: 13px;
+      line-height: 20px;
+    }
+    .testimonial-slider-arrow {
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+    .feature-info-title {
+      margin-bottom: 12px;
+    }
+    .section-title-wrapper {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .section-title-wrapper.full {
+      margin-bottom: 20px;
+      padding-right: 0px;
+    }
+    .section-title {
+      font-size: 25px;
+      line-height: 26px;
+    }
+    .feature-info-column.last {
+      padding-bottom: 0px;
+    }
+    .section-description {
+      margin-top: 14px;
+      font-size: 15px;
+      line-height: 23px;
+    }
+    .section-description.small {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 17px;
+      line-height: 25px;
+    }
+    .image-section-overlay {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+    .image-section-overlay.color {
+      padding: 20px;
+    }
+    .feature-info-icon {
+      height: 25px;
+      margin-top: -3px;
+      padding-right: 0px;
+      padding-left: 10px;
+    }
+    .row-2-short {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 0px;
+    }
+    .bold-text-2 {
+      padding-right: 10px;
+      padding-left: 5px;
+    }
+    .button-about {
+      margin-top: 0px;
+    }
+    .column-11 {
+      height: auto;
+    }
+    .main-feature-title {
+      margin-bottom: 20px;
+      font-size: 29px;
+      line-height: 32px;
+    }
+    .long-feature-block {
+      padding-right: 10px;
+      padding-left: 55px;
+    }
+    .long-feature-block.title-only {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-left: 65px;
+    }
+    .long-feature-title {
+      margin-bottom: 7px;
+    }
+    .long-feature-title.uppercase {
+      font-size: 16px;
+      line-height: 21px;
+    }
+    .small-features-wrapper {
+      margin-left: 0px;
+    }
+    .row-6 {
+      padding-top: 0px;
+    }
+    .video-lightbox-icon {
+      height: 20px;
+    }
+    .video-lightbox-block {
+      height: 170px;
+    }
+    .video-lightbox-block.about-us {
+      height: 140px;
+    }
+    .button-4 {
+      margin-top: 10px;
+      padding-right: 19px;
+      padding-left: 19px;
+      font-size: 11px;
+      line-height: 21px;
+    }
+    .button-4._2 {
+      margin-left: 4px;
+    }
+    .video-lightbox-button {
+      width: 50px;
+      height: 50px;
+      padding-top: 13px;
+    }
+    .video-lightbox-button.line {
+      padding-top: 12px;
+    }
+    .process-tab-pane {
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .process-tab-button {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      margin-top: 19px;
+      margin-right: 2px;
+      margin-left: 2px;
+      padding-top: 18px;
+      padding-right: 0px;
+      padding-left: 0px;
+      border-width: 1px;
+      border-color: rgba(0, 0, 0, .1);
+      font-size: 8px;
+      text-align: center;
+    }
+    .process-tab-button.today {
+      padding-top: 23px;
+    }
+    .process-tab-button.today.w--current {
+      padding-top: 23px;
+    }
+    .process-tab-icon {
+      height: 13px;
+    }
+    .top-line-block {
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+    .text-block-7 {
+      text-align: center;
+    }
+    .unordered-list-3 {
+      padding-left: 20px;
+    }
+    .unordered-list-4 {
+      padding-left: 20px;
+    }
+    .unordered-list-5 {
+      padding-left: 20px;
+    }
+    .unordered-list-6 {
+      padding-left: 35px;
+    }
+  }
+  
+  
