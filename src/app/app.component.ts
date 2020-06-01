@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LazyLoadScriptService } from './lazy_load_script_service'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,14 @@ export class AppComponent {
   title = 'onehrSite';
 
   ngOnInit() {
+    $(document).ready(function () {
+      $("button").click(function () {
+        var div = $("div");
+        div.animate({ left: '100px' }, "slow");
+        div.animate({ fontSize: '5em' }, "slow");
+      });
+    });
     this.lazyLoadService.loadScript('/assets/js/onehr.js').subscribe(_ => {
-      console.log('Jquery is loaded!')
     });
   }
 }

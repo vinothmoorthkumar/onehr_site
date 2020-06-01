@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import { PageService } from '../../services';
 
 @Component({
   selector: 'app-about-us',
@@ -8,16 +8,12 @@ import * as $ from 'jquery';
 })
 export class AboutUsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private service: PageService) { }
+  html:string;
   public ngOnInit()
   {
-    $(document).ready(function(){
-        $("button").click(function(){
-            var div = $("div");  
-            div.animate({left: '100px'}, "slow");
-            div.animate({fontSize: '5em'}, "slow");
-        });
+    this.service.get().subscribe((response: any) => {
+      this.html=response.data.html
     });
   }
 
