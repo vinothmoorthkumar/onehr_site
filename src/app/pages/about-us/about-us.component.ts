@@ -9,10 +9,11 @@ import { PageService } from '../../services';
 export class AboutUsComponent implements OnInit {
 
   constructor(private service: PageService) { }
-  html:string;
+  html:[];
+  headerTitle='About OneHR'
   public ngOnInit()
   {
-    this.service.get().subscribe((response: any) => {
+    this.service.get('about_us').subscribe((response: any) => {
       this.html=response.data.html
     });
   }

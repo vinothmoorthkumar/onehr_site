@@ -8,8 +8,8 @@ import { map } from 'rxjs/operators';
 export class PageService {
 
   constructor(private http: HttpClient) { }
-  get() {
-    return this.http.get<any>(`/site/about_us`)
+  get(slug) {
+    return this.http.get<any>(`/site/${slug}`)
       .pipe(map(result => {
         return result;
       }));
