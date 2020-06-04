@@ -1,3 +1,3 @@
 <app-header [childMessage]="headerTitle"></app-header>
-<div *ngFor="let htm of html" [innerHtml]="htm.html"></div>
+<div *ngFor="let htm of html" [innerHtml]="sanatizeHtml(htm.html)"></div>
 <app-footer></app-footer>
