@@ -9,19 +9,25 @@ import { LazyLoadScriptService } from './lazy_load_script_service';
 import { PageService } from './services';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
-  providers: [LazyLoadScriptService, PageService],
+    HttpClientModule,
+    FormsModule
+    ],
+  providers: [
+    LazyLoadScriptService, PageService],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
