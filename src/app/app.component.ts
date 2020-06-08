@@ -19,7 +19,5 @@ export class AppComponent {
         div.animate({ fontSize: '5em' }, "slow");
       });
     });
-    this.lazyLoadService.loadScript('/assets/js/onehr.js').subscribe(_ => {
-    });
   }
 }

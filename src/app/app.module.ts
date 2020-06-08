@@ -10,6 +10,7 @@ import { PageService } from './services';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import { FormsModule } from '@angular/forms';
     AboutUsComponent,
     HeaderComponent,
     FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
     ],
   providers: [
     LazyLoadScriptService, PageService],

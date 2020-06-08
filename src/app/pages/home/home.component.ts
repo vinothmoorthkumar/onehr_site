@@ -11,53 +11,67 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { LazyLoadScriptService } from '../../lazy_load_script_service'
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AboutUsComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   @ViewChild('container', { static: true, read: ViewContainerRef }) container: ViewContainerRef;
 
   private componentRef: ComponentRef<{}>;
   constructor(private service: PageService, 
-    private lazyLoadService: LazyLoadScriptService,
-    public sanitizer: DomSanitizer, private compiler: Compiler) { }
+    public sanitizer: DomSanitizer, 
+    private compiler: Compiler,
+    private lazyLoadService: LazyLoadScriptService) { }
   html: any;
   headerTitle = 'About OneHR';
-  slug = 'about_us';
+  slug = 'home';
   mediaSections: any;
   template: string;
   public ngOnInit() {
-    this.service.get('about_us').subscribe((response: any) => {
+    this.service.get(this.slug).subscribe((response: any) => {
       var str = response.data.html.map(ele => ele.html).join();
       var mapObj = {};
-      mapObj["#aboutUs_Brochure"]="{{aboutUs_Brochure}}"
-      mapObj["#aboutUs_our_mandate"]=`<img src="{{aboutUs_our_mandate}}" width="219" alt="Photo of the Secretary General António Guterres">`
-      mapObj['#ourPartnerImg']=` <div class="row-2 w-row"><div *ngFor="let item of aboutUs_our_partners| slice:0:6; let i = index" class="w-col w-col-2">
-          <a href="{{item.link}}"  class="logo-wrapper w-inline-block">
-            <img class="ourparent_img" [src]="item.filePath" alt="un-secretariat-logo">
-          </a>
+      mapObj['#home_slider']=`<div data-delay="3000" data-animation="cross" data-autoplay="1" data-duration="800" data-infinite="1"
+      class="slider w-hidden-small w-hidden-tiny w-slider">
+      <div class="mask w-slider-mask">
+
+          <div class="slide _{{i+1}} w-slide"   *ngFor="let item of home_slider; let i = index" [style.background-image]="'url(' + item.filePath + ')'">
+              <div class="container-fluid center more">
+                  <div class="w-row">
+                      <div class="w-col w-col-8">
+                          <div class="div-block-6">
+                              <h1 class="biger">United Nations Global Center for Human Resources Services</h1>
+                              <div>
+                                  <p class="paragraph intro">Modernizing, streamlining and harmonizing human resources
+                                      functions in the UN System</p>
+                              </div>
+                              <div class="top-margin"><a href="contact-onehr.html" class="button w-button">Get In
+                                      Touch</a></div>
+                          </div>
+                      </div>
+                      <div class="column-4 w-col w-col-4"></div>
+                  </div>
+              </div>
+          </div>
+  
       </div>
-      </div>
-      <div class="row-2-short  w-row"><div *ngFor="let item of aboutUs_our_partners| slice:6:10; let i = index" class="w-col w-col-4">
-          <a href="{{item.link}}"  class="logo-wrapper w-inline-block">
-            <img class="ourparent_img" [src]="item.filePath" alt="un-secretariat-logo">
-          </a>
-      </div>
-      </div>
-      `
-      str = str.replace(/#aboutUs_our_mandate|#ourPartnerImg|#aboutUs_Brochure/gi, function (matched) {
+      <div class="slider-nav w-slider-nav"></div>
+  </div>
+  `
+ 
+      str = str.replace(/#home_slider/gi, function (matched) {
         return mapObj[matched];
       });
       this.template = str;
       this.service.getMedia(this.slug).subscribe((media: any) => {
         this.mediaSections = _.groupBy(media.data, 'section')
+
+  
         this.compileTemplate();
       });
     });
-
-
   }
 
   compileTemplate() {
@@ -73,15 +87,16 @@ export class AboutUsComponent implements OnInit {
       this.componentRef = null;
     }
     this.componentRef = this.container.createComponent(factory);
-    this.lazyLoadService.loadScript('/assets/js/onehr.js').subscribe(_ => {
-    });
+
+      this.lazyLoadService.loadScript('/assets/js/onehr.js').subscribe(_ => {
+        console.log('test')
+      });
+
   }
 
   private createComponentFactorySync(compiler: Compiler, metadata: Component, componentClass: any, media: any): ComponentFactory<any> {
     const cmpClass = componentClass || class RuntimeComponent {
-      aboutUs_our_mandate = media.aboutUs_our_mandate[0].filePath;
-      aboutUs_Brochure = media.aboutUs_Brochure[0].filePath;
-      aboutUs_our_partners = media.aboutUs_our_partners
+      home_slider = media.home_slider
     };
     const decoratedCmp = Component(metadata)(cmpClass);
 

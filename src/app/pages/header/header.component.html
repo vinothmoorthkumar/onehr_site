@@ -1,7 +1,7 @@
 <div data-collapse="medium" data-animation="default" data-duration="400" class="scroll-navigation w-nav"
   data-ix="scroll-navbar-control">
   <div class="container-fluid w-container">
-    <nav role="navigation" class="nav-menu w-nav-menu"><a href="about-onehr.html"
+    <nav role="navigation" class="nav-menu w-nav-menu"><a routerLink="/about"
         class="nav-link no-drop dark w-nav-link w--current">About US</a>
       <div data-hover="1" data-delay="0" class="w-dropdown">
         <div class="nav-link dark w-dropdown-toggle">
@@ -18,15 +18,16 @@
     </nav>
     <div class="menu-button w-nav-button">
       <div class="w-icon-nav-menu"></div>
-    </div><a href="index.html" class="brand w-nav-brand"><img src="assets/images/logo.png" width="193" alt="One HR Logo"
+    </div><a routerLink="/" class="brand w-nav-brand"><img src="assets/images/logo.png" width="193" alt="One HR Logo"
       ></a>
   </div>
 </div>
-<div data-ix="show-nav-scroll-on-scroll" class="sub-banner">
+<div data-ix="show-nav-scroll-on-scroll" [ngClass]="{'sub-banner': childMessage}"
+>
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar style-2 w-nav"
     data-ix="show-navbar">
     <div class="container-fluid w-container">
-      <nav role="navigation" class="nav-menu w-nav-menu"><a href="about-onehr.html"
+      <nav role="navigation" class="nav-menu w-nav-menu"><a routerLink="/about"
           class="nav-link no-drop dark w-nav-link active_menu">About US</a>
         <div data-hover="1" data-delay="0" class="w-dropdown">
           <div class="nav-link dark w-dropdown-toggle">
@@ -43,12 +44,12 @@
       </nav>
       <div class="menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
-      </div><a href="index.html" class="brand w-nav-brand"><img src="assets/images/logo.png" width="193" alt="One HR logo"
+      </div><a routerLink="/" class="brand w-nav-brand"><img src="assets/images/logo.png" width="193" alt="One HR logo"
          
           sizes="193px"></a>
     </div>
   </div>
-  <div class="container-fluid center">
+  <div *ngIf="childMessage" class="container-fluid center">
     <div class="align-center">
       <h1 class="heading-1 white biger">{{childMessage}}</h1>
     </div>
