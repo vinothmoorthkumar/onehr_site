@@ -30,7 +30,7 @@ export class AboutUsComponent implements OnInit {
   template: string;
   public ngOnInit() {
     this.service.get('about_us').subscribe((response: any) => {
-      var str = response.data.html.map(ele => ele.html).join();
+      var str = response.data.html.map(ele => ele.html).join("");
       var mapObj = {};
       mapObj["#aboutUs_Brochure"]="{{aboutUs_Brochure}}"
       mapObj["#aboutUs_our_mandate"]=`<img src="{{aboutUs_our_mandate}}" width="219" alt="Photo of the Secretary General António Guterres">`
