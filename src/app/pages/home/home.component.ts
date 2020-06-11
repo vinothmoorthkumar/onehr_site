@@ -1,14 +1,15 @@
 import {
-  Component,
-  OnInit,
-  ViewChild, ViewContainerRef, ComponentRef,
-  Compiler, ComponentFactory, NgModule, ModuleWithComponentFactories, ComponentFactoryResolver
+  Component, Input,
+  OnInit,AfterContentInit,
+  ViewChild, ViewContainerRef, ComponentRef,ChangeDetectorRef,
+  Compiler, ComponentFactory, NgModule, ModuleWithComponentFactories, ComponentFactoryResolver,ChangeDetectionStrategy
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PageService } from '../../services';
 import * as _ from 'underscore';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LazyLoadScriptService } from '../../lazy_load_script_service'
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-home',
@@ -18,15 +19,18 @@ import { LazyLoadScriptService } from '../../lazy_load_script_service'
 export class HomeComponent implements OnInit {
 
   @ViewChild('container', { static: true, read: ViewContainerRef }) container: ViewContainerRef;
-
+  
   private componentRef: ComponentRef<{}>;
   constructor(private service: PageService,
     public sanitizer: DomSanitizer,
     private compiler: Compiler,
+    public dialog: MatDialog,
+    public cdRef: ChangeDetectorRef,
     private lazyLoadService: LazyLoadScriptService) { }
   html: any;
   headerTitle = 'About OneHR';
   slug = 'home';
+  home_slider;
   mediaSections: any;
   template: string;
   public ngOnInit() {
@@ -78,13 +82,15 @@ export class HomeComponent implements OnInit {
                             <h4 class="heading-4 name">{{item.extras.name}}</h4>
                             <div class="text-block-4"> {{item.extras.designation}} <br> {{item.extras.department}}</div>
                 </div>`
-      str = str.replace(/#home_slider|#ourPartnerImg|#testimonial/gi, function (matched) {
+      
+      mapObj['#iframe']=`<iframe  width="100%" height="100%" [src]="iframe" allow="accelerometer; autoplay;">
+      </iframe> `
+      str = str.replace(/#home_slider|#ourPartnerImg|#testimonial|#iframe/gi, function (matched) {
         return mapObj[matched];
       });
       this.template = str;
       this.service.getMedia(this.slug).subscribe((media: any) => {
         this.mediaSections = _.groupBy(media.data, 'section')
-        console.log('test',this.mediaSections)
         this.compileTemplate();
       });
     });
@@ -93,27 +99,41 @@ export class HomeComponent implements OnInit {
   compileTemplate() {
     let metadata = {
       selector: `runtime-component-sample`,
-      template: this.template
+      template: this.template,
+      changeDetection: ChangeDetectionStrategy.OnPush
     };
 
-    let factory = this.createComponentFactorySync(this.compiler, metadata, null, this.mediaSections);
+    let factory = this.createComponentFactorySync(this.compiler, metadata, null, this.mediaSections,this);
 
     if (this.componentRef) {
       this.componentRef.destroy();
       this.componentRef = null;
     }
     this.componentRef = this.container.createComponent(factory);
-
     this.lazyLoadService.loadScript('/assets/js/onehr.js').subscribe(_ => {
     });
-
   }
 
-  private createComponentFactorySync(compiler: Compiler, metadata: Component, componentClass: any, media: any): ComponentFactory<any> {
+
+  private createComponentFactorySync(compiler: Compiler, metadata: Component, componentClass: any, media: any, THIS: any,): ComponentFactory<any> {
     const cmpClass = componentClass || class RuntimeComponent {
+      
       home_slider = media.home_slider;
       home_our_partners = media.home_our_partners;
       home_testimonial = media.home_testimonial;
+      lightbox = false;
+      iframe=null
+
+      openModel(id){
+        this.lightbox=true;
+        this.iframe=THIS.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${id}?autoplay=1`);
+        THIS.cdRef.detectChanges();
+      }
+
+      closeModal(){
+        this.lightbox=false;
+        THIS.cdRef.detectChanges();
+      }
     };
     const decoratedCmp = Component(metadata)(cmpClass);
 

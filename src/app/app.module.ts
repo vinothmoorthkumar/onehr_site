@@ -10,25 +10,31 @@ import { PageService } from './services';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './pages/home/home.component';
-
+import { HomeComponent, } from './pages/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import {SafePipe} from './pipe/safe.pipe'
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule
     ],
   providers: [
     LazyLoadScriptService, PageService],
-  bootstrap: [AppComponent]
+
+  bootstrap: [AppComponent],
 })
 
 
