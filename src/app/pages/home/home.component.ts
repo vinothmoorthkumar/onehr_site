@@ -9,7 +9,6 @@ import { PageService } from '../../services';
 import * as _ from 'underscore';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LazyLoadScriptService } from '../../lazy_load_script_service'
-import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-home',
@@ -24,7 +23,6 @@ export class HomeComponent implements OnInit {
   constructor(private service: PageService,
     public sanitizer: DomSanitizer,
     private compiler: Compiler,
-    public dialog: MatDialog,
     public cdRef: ChangeDetectorRef,
     private lazyLoadService: LazyLoadScriptService) { }
   html: any;

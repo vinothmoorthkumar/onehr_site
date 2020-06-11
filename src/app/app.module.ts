@@ -12,8 +12,7 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent, } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatDialogModule} from '@angular/material/dialog';
-import {SafePipe} from './pipe/safe.pipe'
+import { SafePipe } from './pipe/safe.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +28,7 @@ import {SafePipe} from './pipe/safe.pipe'
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatDialogModule
-    ],
+  ],
   providers: [
     LazyLoadScriptService, PageService],
 
