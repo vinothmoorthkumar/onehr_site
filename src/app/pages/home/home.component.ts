@@ -1,8 +1,8 @@
 import {
   Component, Input,
-  OnInit,AfterContentInit,
-  ViewChild, ViewContainerRef, ComponentRef,ChangeDetectorRef,
-  Compiler, ComponentFactory, NgModule, ModuleWithComponentFactories, ComponentFactoryResolver,ChangeDetectionStrategy
+  OnInit, AfterContentInit,
+  ViewChild, ViewContainerRef, ComponentRef, ChangeDetectorRef,
+  Compiler, ComponentFactory, NgModule, ModuleWithComponentFactories, ComponentFactoryResolver, ChangeDetectionStrategy
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PageService } from '../../services';
@@ -18,7 +18,7 @@ import { LazyLoadScriptService } from '../../lazy_load_script_service'
 export class HomeComponent implements OnInit {
 
   @ViewChild('container', { static: true, read: ViewContainerRef }) container: ViewContainerRef;
-  
+
   private componentRef: ComponentRef<{}>;
   constructor(private service: PageService,
     public sanitizer: DomSanitizer,
@@ -29,11 +29,13 @@ export class HomeComponent implements OnInit {
   headerTitle = 'About OneHR';
   slug = 'home';
   home_slider;
+  extras: any;
   mediaSections: any;
   template: string;
   public ngOnInit() {
     this.service.get(this.slug).subscribe((response: any) => {
-      var str = response.data.html.map(ele => ele.html).join();
+      this.extras = response.data.extras;
+      var str = response.data.html.map(ele => ele.html).join("");
       var mapObj = {};
       mapObj['#home_slider'] = `<div data-delay="3000" data-animation="cross" data-autoplay="1" data-duration="800" data-infinite="1"
       class="slider w-hidden-small w-hidden-tiny w-slider">
@@ -80,10 +82,16 @@ export class HomeComponent implements OnInit {
                             <h4 class="heading-4 name">{{item.extras.name}}</h4>
                             <div class="text-block-4"> {{item.extras.designation}} <br> {{item.extras.department}}</div>
                 </div>`
-      
-      mapObj['#iframe']=`<iframe  width="100%" height="100%" [src]="iframe" allow="accelerometer; autoplay;">
+
+      mapObj['#iframe'] = `<iframe  width="100%" height="100%" [src]="iframe" allow="accelerometer; autoplay;">
       </iframe> `
-      str = str.replace(/#home_slider|#ourPartnerImg|#testimonial|#iframe/gi, function (matched) {
+      mapObj['#hr_per_unit_jc']= `{{hr_per_unit_jc}}`;
+      mapObj['#hr_per_unit_rv']= `{{hr_per_unit_rv}}`;
+      mapObj['#eav_rv']= `{{eav_rv}}`;
+      mapObj['#eav_jc']= `{{eav_jc}}`;
+      mapObj['#pc_pd']= `{{pc_pd}}`;
+      mapObj['#pc_pw']= `{{pc_pw}}`;
+      str = str.replace(/#eav_rv|#eav_jc|#pc_pd|#pc_pw|#hr_per_unit_jc|#hr_per_unit_rv|#home_slider|#ourPartnerImg|#testimonial|#iframe/gi, function (matched) {
         return mapObj[matched];
       });
       this.template = str;
@@ -101,7 +109,7 @@ export class HomeComponent implements OnInit {
       changeDetection: ChangeDetectionStrategy.OnPush
     };
 
-    let factory = this.createComponentFactorySync(this.compiler, metadata, null, this.mediaSections,this);
+    let factory = this.createComponentFactorySync(this.compiler, metadata, null, this.mediaSections, this);
 
     if (this.componentRef) {
       this.componentRef.destroy();
@@ -115,21 +123,29 @@ export class HomeComponent implements OnInit {
 
   private createComponentFactorySync(compiler: Compiler, metadata: Component, componentClass: any, media: any, THIS: any,): ComponentFactory<any> {
     const cmpClass = componentClass || class RuntimeComponent {
-      
+
       home_slider = media.home_slider;
       home_our_partners = media.home_our_partners;
       home_testimonial = media.home_testimonial;
       lightbox = false;
-      iframe=null
+      iframe = null;
 
-      openModel(id){
-        this.lightbox=true;
-        this.iframe=THIS.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${id}?autoplay=1`);
+      hr_per_unit_jc = 10;
+      hr_per_unit_rv = THIS.extras.hr_per_unit_rv;
+      pc_pw = THIS.extras.pc_pw;
+      pc_pd = THIS.extras.pc_pd;
+      eav_jc = THIS.extras.eav_jc;
+      eav_rv = THIS.extras.eav_rv;
+
+      openModel(id) {
+        console.log('open',THIS.data);
+        this.lightbox = true;
+        this.iframe = THIS.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${id}?autoplay=1`);
         THIS.cdRef.detectChanges();
       }
 
-      closeModal(){
-        this.lightbox=false;
+      closeModal() {
+        this.lightbox = false;
         THIS.cdRef.detectChanges();
       }
     };
