@@ -4,7 +4,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { HomeComponent } from './pages/home/home.component';
 import { JobClassificationComponent } from './pages/job-classification/job-classification.component';
 import { BasicReferenceComponent } from './pages/basic_reference_verification/basic_reference_verification.component';
-
+import { OrgDesignComponent } from './pages/organizational-design/organizational-design.component'
 const routes: Routes = [
   {
     path: '',
@@ -19,8 +19,12 @@ const routes: Routes = [
     component: JobClassificationComponent
   },
   {
-    path: 'basic-reference-verification',
+    path: 'our-services-basic-reference-verification',
     component: BasicReferenceComponent
+  },
+  {
+    path: 'our-services-organizational-design',
+    component: OrgDesignComponent
   }
 ];
 

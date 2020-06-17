@@ -62,7 +62,7 @@ export class HomeComponent implements OnInit {
       <div class="slider-nav w-slider-nav"></div>
   </div>
   `
-      mapObj['#ourPartnerImg'] = ` <div class="row-2 w-row"><div *ngFor="let item of home_our_partners| slice:0:6; let i = index" class="w-col w-col-2">
+      mapObj['#ourPartnerImg'] = `<div class="row-2 w-row"><div *ngFor="let item of home_our_partners| slice:0:6; let i = index" class="w-col w-col-2">
   <a href="{{item.link}}"  class="logo-wrapper w-inline-block">
     <img class="ourparent_img" [src]="item.filePath" alt="un-secretariat-logo">
   </a>
@@ -138,7 +138,7 @@ export class HomeComponent implements OnInit {
       eav_rv = THIS.extras.eav_rv;
 
       openModel(id) {
-        console.log('open',THIS.data);
+        console.log('open');
         this.lightbox = true;
         this.iframe = THIS.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${id}?autoplay=1`);
         THIS.cdRef.detectChanges();
