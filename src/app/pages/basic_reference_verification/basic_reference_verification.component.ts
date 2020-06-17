@@ -12,11 +12,11 @@ import { LazyLoadScriptService } from '../../lazy_load_script_service'
 import * as slug from '../_slug';
 
 @Component({
-  selector: 'app-job-classification',
-  templateUrl: './job-classification.component.html',
-  styleUrls: ['./job-classification.component.scss']
+  selector: 'app-basic_reference_verification',
+  templateUrl: './basic_reference_verification.component.html',
+  styleUrls: ['./basic_reference_verification.component.scss']
 })
-export class JobClassificationComponent implements OnInit {
+export class BasicReferenceComponent implements OnInit {
 
   @ViewChild('container', { static: true, read: ViewContainerRef }) container: ViewContainerRef;
 
@@ -27,7 +27,7 @@ export class JobClassificationComponent implements OnInit {
     public cdRef: ChangeDetectorRef,
     private lazyLoadService: LazyLoadScriptService) { }
   html: any;
-  slug = slug.slug.job_classification;
+  slug = slug.slug.basic_reference_verification;
   extras: any;
   mediaSections: any;
   template: string;
