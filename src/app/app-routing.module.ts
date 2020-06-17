@@ -4,7 +4,8 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { HomeComponent } from './pages/home/home.component';
 import { JobClassificationComponent } from './pages/job-classification/job-classification.component';
 import { BasicReferenceComponent } from './pages/basic_reference_verification/basic_reference_verification.component';
-import { OrgDesignComponent } from './pages/organizational-design/organizational-design.component'
+import { OrgDesignComponent } from './pages/organizational-design/organizational-design.component';
+import { FaqComponent } from './pages/faq/faq.component';
 const routes: Routes = [
   {
     path: '',
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'our-services-organizational-design',
     component: OrgDesignComponent
+  },
+  {
+    path: 'faq-frequently-asked-questions',
+    component: FaqComponent
   }
 ];
 
