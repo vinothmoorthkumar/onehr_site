@@ -1,22 +1,22 @@
 <div data-collapse="medium" data-animation="default" data-duration="400" class="scroll-navigation w-nav"
   data-ix="scroll-navbar-control">
   <div class="container-fluid w-container">
-    <nav role="navigation1" class="nav-menu w-nav-menu"><a routerLink="/about"
-        class="nav-link no-drop dark w-nav-link w--current">About US</a>
+    <nav role="navigation1" class="nav-menu w-nav-menu"><a routerLink="about" routerLinkActive="active_menu w--current"
+        class="nav-link no-drop dark w-nav-link">About US</a>
       <div data-hover="1" data-delay="0" class="w-dropdown">
         <div class="nav-link dark w-dropdown-toggle">
           <div class="arrow-drop w-icon-dropdown-toggle"></div>
           <div>SERVICES</div>
         </div>
         <nav class="dropdown-list w-dropdown-list">
-          <a routerLink="/our-services-job-classification" class="drop-link w-dropdown-link">Job classification</a>
-          <a routerLink="/our-services-basic-reference-verification" class="drop-link w-dropdown-link">Basic reference
+          <a routerLink="/our-services-job-classification" routerLinkActive="w--current" class="drop-link w-dropdown-link">Job classification</a>
+          <a routerLink="/our-services-basic-reference-verification" routerLinkActive="w--current" class="drop-link w-dropdown-link">Basic reference
             verification package</a>
-          <a routerLink="/our-services-organizational-design" class="drop-link w-dropdown-link">Organizational design</a>
-          <a routerLink="faq-frequently-asked-questions" class="drop-link w-dropdown-link">FAQ</a>
+          <a routerLink="/our-services-organizational-design" routerLinkActive="w--current" class="drop-link w-dropdown-link">Organizational design</a>
+          <a routerLink="faq-frequently-asked-questions" routerLinkActive="w--current" class="drop-link w-dropdown-link">FAQ</a>
         </nav>
       </div>
-      <a href="contact-onehr.html" class="nav-link no-drop dark w-nav-link">Contact</a>
+      <a routerLink="contact-onehr" class="nav-link no-drop dark w-nav-link" routerLinkActive="active_menu w--current">Contact</a>
     </nav>
     <div class="menu-button w-nav-button">
       <div class="w-icon-nav-menu"></div>
@@ -24,13 +24,13 @@
         alt="One HR Logo"></a>
   </div>
 </div>
-<!-- <div data-ix="show-nav-scroll-on-scroll " class="sub-banner"> -->
+
 <div data-ix="show-nav-scroll-on-scroll">
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar style-2 w-nav"
     data-ix="show-navbar">
     <div class="container-fluid w-container">
-      <nav role="navigation2" class="nav-menu w-nav-menu"><a routerLink="/about"
-          class="nav-link no-drop dark w-nav-link active_menu">About US</a>
+      <nav role="navigation2" class="nav-menu w-nav-menu"><a routerLink="about"
+          class="nav-link no-drop dark w-nav-link" routerLinkActive="active_menu w--current">About US</a>
         <div data-hover="1" data-delay="0" class="w-dropdown">
           <div class="nav-link dark w-dropdown-toggle">
           
@@ -38,14 +38,14 @@
             <div>SERVICES</div>
           </div>
           <nav class="dropdown-list w-dropdown-list">
-            <a routerLink="/our-services-job-classification" class="drop-link w-dropdown-link">Job classification</a>
-            <a routerLink="/our-services-basic-reference-verification" class="drop-link w-dropdown-link">Basic reference
+            <a routerLink="/our-services-job-classification" routerLinkActive="w--current" class="drop-link w-dropdown-link">Job classification</a>
+            <a routerLink="/our-services-basic-reference-verification" routerLinkActive="w--current" class="drop-link w-dropdown-link">Basic reference
               verification package</a>
-            <a routerLink="/our-services-organizational-design" class="drop-link w-dropdown-link">Organizational
+            <a routerLink="/our-services-organizational-design" routerLinkActive="w--current" class="drop-link w-dropdown-link">Organizational
               design</a>
-            <a routerLink="faq-frequently-asked-questions" class="drop-link w-dropdown-link">FAQ</a>
+            <a routerLink="faq-frequently-asked-questions" routerLinkActive="w--current" class="drop-link w-dropdown-link">FAQ</a>
           </nav>
-        </div><a routerLink="contact-onehr" class="nav-link no-drop dark w-nav-link">Contact</a>
+        </div><a routerLink="contact-onehr" routerLinkActive="active_menu w--current" class="nav-link no-drop dark w-nav-link">Contact</a>
       </nav>
       <div class="menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
@@ -54,9 +54,5 @@
           sizes="193px"></a>
     </div>
   </div>
-  <!-- <div class="container-fluid center">
-    <div class="align-center">
-      <h1 class="heading-1 white biger">About</h1>
-    </div>
-  </div> -->
+
 </div>
