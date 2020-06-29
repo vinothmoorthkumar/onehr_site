@@ -7,6 +7,8 @@ import { BasicReferenceComponent } from './pages/basic_reference_verification/ba
 import { OrgDesignComponent } from './pages/organizational-design/organizational-design.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AsgTransComponent } from './pages/asg-transcript/asg-transcript.component'
+
 const routes: Routes = [
   {
     path: '',
@@ -35,6 +37,10 @@ const routes: Routes = [
   {
     path: 'contact-onehr',
     component: ContactComponent
+  },
+  {
+    path: 'asg-transcript',
+    component: AsgTransComponent
   }
 ];
 

@@ -5,7 +5,18 @@ body {
     line-height: 20px;
   }
   
+  .title-align{
+    padding: 5% 0;
+  }
   
+  .title-align .heading-1 {
+    display: block;
+  }
+
+  .sub_title {
+    font-size: 19px !important;
+  }
+
   h1 {
     margin-top: 0px;
     margin-bottom: 10px;

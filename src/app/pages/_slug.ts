@@ -8,4 +8,5 @@ export const slug={
     organizational_design:'organizational_design',
     faq:'faq',
     contact: 'contact',
+    asg_transcript: 'asg_transcript',
 }

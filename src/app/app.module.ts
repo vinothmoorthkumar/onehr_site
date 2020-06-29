@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent, } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SafePipe } from './pipe/safe.pipe'
+import { AsgTransComponent } from './pages/asg-transcript/asg-transcript.component'
+
 @NgModule({
   declarations: [
     AppComponent,
