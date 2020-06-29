@@ -6,6 +6,7 @@ import { JobClassificationComponent } from './pages/job-classification/job-class
 import { BasicReferenceComponent } from './pages/basic_reference_verification/basic_reference_verification.component';
 import { OrgDesignComponent } from './pages/organizational-design/organizational-design.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { ContactComponent } from './pages/contact/contact.component';
 const routes: Routes = [
   {
     path: '',
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path: 'faq-frequently-asked-questions',
     component: FaqComponent
+  },
+  {
+    path: 'contact-onehr',
+    component: ContactComponent
   }
 ];
 
