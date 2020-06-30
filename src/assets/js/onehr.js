@@ -1,4 +1,5 @@
-/*!
+function OneHr(){
+  /*!
  * Webflow: Front-end site library
  * @license MIT
  * Inline scripts may access the api using an async handler:
@@ -6,6 +7,7 @@
  *   Webflow.push(readyFunction);
  */
 /******/ (function(modules) { // webpackBootstrap
+  console.log('test hello')
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -77,7 +79,6 @@
 /**
  * Webflow: Core site library
  */
-console.log('test hello')
 var Webflow = {};
 var modules = {};
 var primary = [];
@@ -315,7 +316,7 @@ Webflow.ready = function () {
   }
 
   // Run secondary ready methods
-  _.each(secondary, callReady);
+  // _.each(secondary, callReady);
 
   // Trigger resize
   Webflow.resize.up();
@@ -5174,3 +5175,4 @@ Webflow.require('ix').init([
   {"slug":"show-navbar","name":"Show Navbar","value":{"style":{},"triggers":[{"type":"scroll","selector":".scroll-navigation","preserve3d":true,"stepsA":[{"wait":"500ms","transition":"transform 200 ease 0","x":"0px","y":"-100%","z":"0px"}],"stepsB":[{"wait":"500ms","transition":"transform 200 ease 0","x":"0px","y":"0px","z":"0px"}]}]}},
   {"slug":"scroll-navbar-control","name":"Scroll Navbar Control","value":{"style":{"title":"Control","x":"0px","y":"-100%","z":"0px"},"triggers":[]}}
 ]);
+}

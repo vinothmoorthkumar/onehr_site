@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LazyLoadScriptService } from './lazy_load_script_service'
 import * as $ from 'jquery';
+declare function OneHr();
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ export class AppComponent {
     });
     
     this.lazyLoadService.loadScript('/assets/js/onehr.js').subscribe(_ => {
+      OneHr();
     });
   }
 }

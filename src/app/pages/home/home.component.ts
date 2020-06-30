@@ -9,7 +9,7 @@ import { PageService } from '../../services';
 import * as _ from 'underscore';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LazyLoadScriptService } from '../../lazy_load_script_service'
-
+declare function OneHr();
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -117,13 +117,16 @@ export class HomeComponent implements OnInit {
     }
     this.componentRef = this.container.createComponent(factory);
     this.lazyLoadService.loadScript('/assets/js/onehr.js').subscribe(_ => {
+
     });
   }
 
 
   private createComponentFactorySync(compiler: Compiler, metadata: Component, componentClass: any, media: any, THIS: any,): ComponentFactory<any> {
     const cmpClass = componentClass || class RuntimeComponent {
-
+      public ngOnInit() {
+        OneHr();
+      }
       home_slider = media.home_slider;
       home_our_partners = media.home_our_partners;
       home_testimonial = media.home_testimonial;
