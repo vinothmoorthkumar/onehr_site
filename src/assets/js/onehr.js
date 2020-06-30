@@ -7,7 +7,6 @@ function OneHr(){
  *   Webflow.push(readyFunction);
  */
 /******/ (function(modules) { // webpackBootstrap
-  console.log('test hello')
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
