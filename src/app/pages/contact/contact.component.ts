@@ -59,7 +59,6 @@ export class ContactComponent implements OnInit {
     }
     this.componentRef = this.container.createComponent(factory);
     let childComponent: any = this.componentRef.instance;
-    console.log('this.extras',this.extras)
     childComponent.lat  =this.extras.lat;
     childComponent.lng = this.extras.lng;
     childComponent.zoom = 18;

@@ -63,13 +63,13 @@ export class HomeComponent implements OnInit {
   </div>
   `
       mapObj['#ourPartnerImg'] = `<div class="row-2 w-row"><div *ngFor="let item of home_our_partners| slice:0:6; let i = index" class="w-col w-col-2">
-  <a href="{{item.link}}"  class="logo-wrapper w-inline-block">
+  <a href="{{item.extras.link}}"  class="logo-wrapper w-inline-block">
     <img class="ourparent_img" [src]="item.filePath" alt="un-secretariat-logo">
   </a>
 </div>
 </div>
 <div class="row-2-short  w-row"><div *ngFor="let item of home_our_partners| slice:6:10; let i = index" class="w-col w-col-4">
-  <a href="{{item.link}}"  class="logo-wrapper w-inline-block">
+  <a href="{{item.extras.link}}"  class="logo-wrapper w-inline-block">
     <img class="ourparent_img" [src]="item.filePath" alt="un-secretariat-logo">
   </a>
 </div>
@@ -124,9 +124,7 @@ export class HomeComponent implements OnInit {
 
   private createComponentFactorySync(compiler: Compiler, metadata: Component, componentClass: any, media: any, THIS: any,): ComponentFactory<any> {
     const cmpClass = componentClass || class RuntimeComponent {
-      public ngOnInit() {
-        OneHr();
-      }
+
       home_slider = media.home_slider;
       home_our_partners = media.home_our_partners;
       home_testimonial = media.home_testimonial;
@@ -139,7 +137,9 @@ export class HomeComponent implements OnInit {
       pc_pd = THIS.extras.pc_pd;
       eav_jc = THIS.extras.eav_jc;
       eav_rv = THIS.extras.eav_rv;
-
+      public ngOnInit() {
+        OneHr();
+      }
       openModel(id) {
         this.lightbox = true;
         this.iframe = THIS.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${id}?autoplay=1`);
