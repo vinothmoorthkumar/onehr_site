@@ -138,7 +138,6 @@ export class HomeComponent implements OnInit {
       eav_rv = THIS.extras.eav_rv;
 
       openModel(id) {
-        console.log('open');
         this.lightbox = true;
         this.iframe = THIS.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${id}?autoplay=1`);
         THIS.cdRef.detectChanges();

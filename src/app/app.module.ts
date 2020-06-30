@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent, } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SafePipe } from './pipe/safe.pipe'
-import { AsgTransComponent } from './pages/asg-transcript/asg-transcript.component'
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,9 @@ import { AsgTransComponent } from './pages/asg-transcript/asg-transcript.compone
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCfVxVZCzMCxPpMU3-sDdLA75Ac5MXDkeg'
+    })
   ],
   providers: [
     LazyLoadScriptService, PageService],

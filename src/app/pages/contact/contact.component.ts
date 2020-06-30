@@ -10,6 +10,7 @@ import * as _ from 'underscore';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LazyLoadScriptService } from '../../lazy_load_script_service'
 import * as slug from '../_slug';
+import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-contact',
@@ -35,7 +36,6 @@ export class ContactComponent implements OnInit {
     this.service.get(this.slug).subscribe((response: any) => {
       this.extras = response.data.extras;
       var str = response.data.html.map(ele => ele.html).join("");
-  
       this.template = str;
       this.service.getMedia(this.slug).subscribe((media: any) => {
         this.mediaSections = _.groupBy(media.data, 'section')
@@ -58,6 +58,11 @@ export class ContactComponent implements OnInit {
       this.componentRef = null;
     }
     this.componentRef = this.container.createComponent(factory);
+    let childComponent: any = this.componentRef.instance;
+    console.log('this.extras',this.extras)
+    childComponent.lat  =this.extras.lat;
+    childComponent.lng = this.extras.lng;
+    childComponent.zoom = 18;
     this.lazyLoadService.loadScript('/assets/js/onehr.js').subscribe(_ => {
     });
   }
@@ -65,11 +70,15 @@ export class ContactComponent implements OnInit {
 
   private createComponentFactorySync(compiler: Compiler, metadata: Component, componentClass: any, media: any, THIS: any,): ComponentFactory<any> {
     const cmpClass = componentClass || class RuntimeComponent {
-
+      lat: number
+      lng: number 
     };
     const decoratedCmp = Component(metadata)(cmpClass);
 
-    @NgModule({ imports: [CommonModule], declarations: [decoratedCmp] })
+    @NgModule({ imports: [
+      CommonModule,
+      AgmCoreModule
+    ], declarations: [decoratedCmp] })
     class RuntimeComponentModule { }
 
     let module: ModuleWithComponentFactories<any> = compiler.compileModuleAndAllComponentsSync(RuntimeComponentModule);

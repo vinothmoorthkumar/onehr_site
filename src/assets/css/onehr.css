@@ -5,6 +5,10 @@ body {
     line-height: 20px;
   }
   
+  agm-map {
+    height: 400px;
+  }
+
   .title-align{
     padding: 5% 0;
   }
